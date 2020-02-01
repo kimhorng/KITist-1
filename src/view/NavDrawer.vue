@@ -20,13 +20,12 @@ export default {
     data(){
         return{
             items: [
-          { title: 'Add Task', icon: 'add_circle' , route: '/addtask'},
-          { title: 'Completed', icon: 'done_all' , route: '/completed'},
-          { title: 'Important', icon: 'star' ,route: '/important'},
-          { title: 'Dashboard', icon: 'dashboard',route:'/dashboard' },
-          { title: 'Trash', icon: 'delete' ,route: '/trash'},
+          { title: 'Add Task', icon: 'add_circle', route: '/addtask'},
+          { title: 'Completed', icon: 'done_all'},
+          { title: 'Important', icon: 'star'},
+          { title: 'Dashboard', icon: 'dashboard'},
+          { title: 'Trash', icon: 'delete'},
         ],
-        mini: true,
         }
     },
   

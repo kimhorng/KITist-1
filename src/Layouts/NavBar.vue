@@ -46,6 +46,17 @@
             v-model="drawer"
             app
             :mini-variant.sync="mini">
+            <v-list-item class="px-2">
+            <v-list-item-title>Task</v-list-item-title>
+
+            <v-btn
+              icon
+              @click.stop="mini = !mini"
+            >
+              <v-icon>mdi-chevron-left</v-icon>
+            </v-btn>
+        </v-list-item>
+        <hr>
            <NavDrawer/>
 
           </v-navigation-drawer>
@@ -65,6 +76,7 @@ export default {
         return{
             drawer : false,
             dialog: false,
+            mini : true
         }
     }
 }

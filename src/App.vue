@@ -3,6 +3,9 @@
     <v-card>
       <NavBar/>
     </v-card>
+    <v-content>
+      <router-view></router-view>
+    </v-content>
     <v-card height="90%" width="full" color="grey"></v-card>
     <v-footer dark>
       <Footer/>
@@ -15,12 +18,10 @@ import Footer from './Layouts/Footer';
 import NavBar from './Layouts/NavBar';
 export default {
   name: 'App',
-
   components: {
     NavBar,
     Footer,
   },
-
   data: () => ({
     //
   }),
